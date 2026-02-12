@@ -509,7 +509,7 @@ console.log('%c✨ All scripts loaded successfully!', 'color: #10b981; font-size
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'Aakash_S_CV.PDF';
+    link.href = 'Aakash_Resume.PDF';
     link.download = 'Aakash_Resume.pdf';
     document.body.appendChild(link);
     link.click();
