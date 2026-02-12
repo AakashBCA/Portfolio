@@ -505,37 +505,6 @@ window.addEventListener('scroll', () => {
 
 console.log('%c✨ All scripts loaded successfully!', 'color: #10b981; font-size: 12px;');
 
-
-
-function downloadResume() {
-    const link = document.createElement('a');
-    link.href = '/My_Resume.PDF';
-    link.download = 'Aakash_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-
-/* Desktop icon click */
-
-document.addEventListener('click', function (e) {
-    if (e.target.classList.contains('download-icon')) {
-        downloadResume();
-    }
-});
-
-
-function handleNavbarDownloadIcon() {
-    const iconItem = document.querySelector('.nav-download');
-
-    if (window.innerWidth <= 768 && iconItem) {
-        iconItem.remove();
-    }
-}
-
-handleNavbarDownloadIcon();
-window.addEventListener('resize', handleNavbarDownloadIcon);
-
 /* ===============================
    RESUME DOWNLOAD (VERCEL SAFE)
 ================================= */
