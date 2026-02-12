@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakash S - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Aakash<span class="accent"> S</span></span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-download">
+                    <i class="download-icon" ></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image">
+                        <div class="profile-placeholder">
+                            <img src="pro-pic.png" class="profile-pic">
+                            <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="70" r="35" fill="#6366f1"/>
+                                <path d="M 50 150 Q 100 120 150 150 L 150 200 L 50 200 Z" fill="#6366f1"/> 
+                            </svg> -->
+                        </div>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Aakash S</span>
+                </h1>
+                <p class="hero-subtitle">Developer & Computer Applications Student</p>
+                <p class="hero-description">
+                    Passionate about creating elegant, responsive web experience
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <div class="mobile-resume-btn">
+                        <button class="btn btn-third" onclick="downloadResume()">
+                            Download Resume
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about section-reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content glass-card">
+                    <h3>Profile Summary</h3>
+                    <p>
+                        Motivated Computer Science student with comprehensive knowledge in Java, Python, HTML, CSS, and
+                        JavaScript.
+                        I bring strong problem-solving abilities, excellent communication skills, and a collaborative
+                        teamwork approach.
+                        My passion lies in development and crafting modern, user-centric UI designs that
+                        deliver exceptional experiences.
+                    </p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Valayapatti, Namakkal - 637020</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">aakashvpt001@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-content glass-card">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <div class="edu-header">
+                            <h4>Bachelor of Computer Applications</h4>
+                            <span class="edu-year">2022 - 2025</span>
+                        </div>
+                        <p class="edu-details">CGPA: 6.78</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-header">
+                            <h4>Higher Secondary Certificate</h4>
+                            <span class="edu-year">2021 - 2022</span>
+                        </div>
+                        <p class="edu-details">Percentage: 80.2%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="skills" class="skills section-reveal">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">87%</span>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                    <span class="skill-percentage">77%</span>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+
+    <section id="experience" class="experience section-reveal">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline1">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3>Front-End Web Developer</h3>
+                            <span class="exp-company">SDLC</span>
+                        </div>
+                        <span class="exp-date">May 2024</span>
+                        <ul class="exp-list">
+                            <li>Built responsive and user-friendly web interfaces with modern design principles</li>
+                            <li>Collaborated effectively with designers and backend developers to deliver cohesive
+                                solutions</li>
+                            <li>Developed clean, maintainable code using HTML, CSS, and JavaScript</li>
+                            <li>Ensured cross-browser compatibility and optimal performance across all devices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-timeline2">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3>Team Lead</h3>
+                            <span class="exp-company">Design Thinking</span>
+                        </div>
+                        <span class="exp-date">Dec 2025</span>
+                        <ul class="exp-list">
+                            <li>Team Lead for 7-member team</li>
+                            <li>Developed Diptiva, a role-based academic mobile application</li>
+                            <li>Led system architecture, backend authorizaion, real time communication, AI-assisted
+                                learning features, and push notification workflows
+                            </li>
+                            <li>Focused on Production-grade quality, secure role enforcement, and scalable design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="projects" class="projects section-reveal">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="mens weare screen shot.png" alt="Men's Wear Website" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://aakashbca.github.io/MENSWEAR/" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Men's Wear Website</h3>
+                        <p>A fully responsive e-commerce frontend featuring product listings, dynamic categories, and
+                            advanced search functionality. Built with clean, semantic HTML, modern CSS, and vanilla
+                            JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="ELITEWEAR.png" alt="Elite Feet Website" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://aakashbca.github.io/ELITEWEAR/" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Elite Feet</h3>
+                        <p>Modern men's footwear e-commerce platform with stunning UI design. Features smooth
+                            animations, intuitive navigation, and flawless cross-browser optimization for the best
+                            shopping experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact section-reveal">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info glass-card">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        vision.
+                    </p>
+                    <div class="contact-items">
+
+                        <!-- Location (NOT clickable) -->
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10
+                         C3 7.6 3.95 5.32 5.64 3.64
+                         C7.32 1.95 9.61 1 12 1
+                         C14.39 1 16.68 1.95 18.36 3.64
+                         C20.05 5.32 21 7.6 21 10Z" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Valayapatti, Namakkal – 637020</p>
+                            </div>
+                        </div>
+
+                        <!-- Email (click anywhere → opens Gmail in browser) -->
+
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aakashvpt001@gmail.com" target="_blank"
+                            rel="noopener noreferrer" class="contact-item-link">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18
+                             C22 19.1 21.1 20 20 20H4
+                             C2.9 20 2 19.1 2 18V6
+                             C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" />
+                                        <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>aakashvpt001@gmail.com</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Phone (click anywhere → call) -->
+
+                        <a href="tel:+919994409511" class="contact-item-link">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 16.92V20A2 2 0 0 1 20 22
+                             C10.61 22 2 13.39 2 4
+                             A2 2 0 0 1 4 2H7.09
+                             A2 2 0 0 1 9.09 3.72
+                             L10.43 7.64
+                             A2 2 0 0 1 9.87 9.65
+                             L8.21 11.21
+                             A16 16 0 0 0 12.79 15.79
+                             L14.35 14.13
+                             A2 2 0 0 1 16.36 13.57
+                             L20.28 14.91
+                             A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p>+91 99944 09511</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- GitHub -->
+
+                        <a href="https://github.com/AakashBCA" target="_blank" rel="noopener noreferrer"
+                            class="contact-item-link">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C6.48 2 2 6.58 2 12.26
+                       C2 16.82 4.87 20.72 8.84 21.98
+                       C9.34 22.07 9.5 21.76 9.5 21.5
+                       V19.77
+                       C6.73 20.39 6.14 18.41 6.14 18.41
+                       C5.68 17.26 5.03 16.96 5.03 16.96
+                       C4.12 16.33 5.1 16.35 5.1 16.35
+                       C6.1 16.42 6.63 17.39 6.63 17.39
+                       C7.5 18.93 8.97 18.49 9.54 18.24
+                       C9.63 17.58 9.89 17.13 10.18 16.87
+                       C7.96 16.6 5.62 15.73 5.62 11.74
+                       C5.62 10.6 6.03 9.67 6.7 8.94
+                       C6.59 8.67 6.22 7.54 6.8 6.02
+                       C6.8 6.02 7.67 5.74 9.5 7
+                       C10.33 6.77 11.17 6.65 12 6.65
+                       C12.83 6.65 13.67 6.77 14.5 7
+                       C16.33 5.74 17.2 6.02 17.2 6.02
+                       C17.78 7.54 17.41 8.67 17.3 8.94
+                       C17.97 9.67 18.38 10.6 18.38 11.74
+                       C18.38 15.74 16.03 16.6 13.8 16.86
+                       C14.16 17.18 14.5 17.81 14.5 18.78
+                       V21.5
+                       C14.5 21.76 14.66 22.08 15.16 21.98
+                       C19.13 20.72 22 16.82 22 12.26
+                       C22 6.58 17.52 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <div class="contact-text">
+                                    <h4>GitHub</h4>
+                                    <p>https://github.com/AakashBCA</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn -->
+
+                        <a href="https://www.linkedin.com/in/aakash-s-" target="_blank" rel="noopener noreferrer"
+                            class="contact-item-link">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 8A6 6 0 0 1 22 14V21H18V14
+                       A2 2 0 0 0 16 12
+                       A2 2 0 0 0 14 14V21H10V14
+                       A6 6 0 0 1 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <rect x="2" y="9" width="4" height="12" stroke="currentColor"
+                                            stroke-width="2" />
+                                        <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" />
+                                    </svg>
+                                </div>
+
+                                <div class="contact-text">
+                                    <h4>LinkedIn</h4>
+                                    <p>linkedin.com/in/aakash-s-</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Aakash S. Crafted with passion and precision.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
