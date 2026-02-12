@@ -535,3 +535,48 @@ function handleNavbarDownloadIcon() {
 
 handleNavbarDownloadIcon();
 window.addEventListener('resize', handleNavbarDownloadIcon);
+
+/* ===============================
+   RESUME DOWNLOAD (VERCEL SAFE)
+================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const RESUME_PATH = "./My_Resume.pdf"; 
+    // ⚠️ Make sure filename EXACTLY matches GitHub (case-sensitive)
+
+    function downloadResume() {
+        fetch(RESUME_PATH, { method: "HEAD" })
+            .then(response => {
+                if (!response.ok) {
+                    console.error("Resume file not found. Check filename & path.");
+                    alert("Resume file not found. Please check deployment.");
+                    return;
+                }
+
+                const link = document.createElement("a");
+                link.href = RESUME_PATH;
+                link.download = "Aakash_Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            })
+            .catch(() => {
+                console.error("Download failed.");
+                alert("Download failed. Please try again.");
+            });
+    }
+
+    /* Desktop navbar icon */
+    const downloadIcon = document.querySelector(".download-icon");
+    if (downloadIcon) {
+        downloadIcon.addEventListener("click", downloadResume);
+    }
+
+    /* Mobile button */
+    const mobileBtn = document.querySelector(".btn-third");
+    if (mobileBtn) {
+        mobileBtn.addEventListener("click", downloadResume);
+    }
+
+});
