@@ -901,7 +901,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-text h4 {
-    margin-bottom: 8px;
+    margin-top: 12px;
     color: var(--text-primary);
 }
 
