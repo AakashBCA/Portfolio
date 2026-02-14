@@ -549,3 +549,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+
+
+function handleNavbarDownloadIcon() {
+    const iconItem = document.querySelector('.nav-download');
+
+    if (!iconItem) return;
+
+    if (window.innerWidth <= 768) {
+        iconItem.style.display = 'none';
+    } else {
+        iconItem.style.display = 'block';
+    }
+}
+
+handleNavbarDownloadIcon();
+window.addEventListener('resize', handleNavbarDownloadIcon);
