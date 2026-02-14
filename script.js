@@ -511,8 +511,8 @@ console.log('%c✨ All scripts loaded successfully!', 'color: #10b981; font-size
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const RESUME_PATH = "./My_Resume.pdf"; 
-    // ⚠️ Make sure filename EXACTLY matches GitHub (case-sensitive)
+    const RESUME_PATH = "./Aakash_S_CV.pdf"; 
+    //  Make sure filename EXACTLY matches GitHub (case-sensitive)
 
     function downloadResume() {
         fetch(RESUME_PATH, { method: "HEAD" })
